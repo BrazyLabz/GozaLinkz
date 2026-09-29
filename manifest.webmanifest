@@ -1,0 +1,10 @@
+{
+  "name": "GozaLinkz",
+  "short_name": "GozaLinkz",
+  "description": "Videos, socials, and free apps from GozaVibez.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0d0b13",
+  "theme_color": "#0d0b13",
+  "icons": [{"src":"./goza-logo.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]
+}

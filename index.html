@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d0b13">
+  <meta name="description" content="GozaLinkz — videos, socials, and free apps from GozaVibez.">
+  <title>GozaLinkz — GozaVibez</title>
+  <link rel="icon" href="./goza-logo.png" type="image/png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <style>
+    :root{color-scheme:dark;--bg:#0d0b13;--panel:#17141f;--panel2:#211b2c;--line:#ffffff16;--text:#faf7ff;--muted:#b5adbf;--purple:#a45cff;--pink:#ff72c6;--mint:#a5f1d0;--shadow:0 28px 80px #0008}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 12% -8%,#602d8d66,transparent 42%),radial-gradient(ellipse at 90% 30%,#60234a30,transparent 35%),var(--bg);color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}.page{width:min(100% - 36px,900px);margin:0 auto;padding:25px 0 70px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:45px}.wordmark{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:850;letter-spacing:-.4px}.mark{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(140deg,var(--pink),var(--purple));color:#201329;box-shadow:0 8px 28px #a45cff40}.mark svg{width:20px}.availability{display:flex;gap:8px;align-items:center;color:#ddd5e4;font-size:12px}.availability i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 13px #a5f1d0aa}
+    .hero{text-align:center;margin:0 auto 35px;max-width:640px}.avatar{width:88px;height:88px;margin:0 auto 17px;border-radius:29px;display:grid;place-items:center;background:linear-gradient(145deg,#f7c4ed,#ac6cff 56%,#6231b7);box-shadow:0 16px 50px #a45cff42;color:#21142c;font-weight:950;font-size:34px;letter-spacing:-3px;transform:rotate(-4deg)}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#d7b4ff;font-weight:850}.hero h1{font-size:clamp(42px,9vw,72px);line-height:1;letter-spacing:-4px;margin:11px 0 13px}.hero p{max-width:470px;color:var(--muted);margin:0 auto;font-size:16px}.socials{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:23px}.social-btn{display:inline-flex;gap:9px;align-items:center;justify-content:center;min-height:46px;padding:0 17px;border-radius:14px;border:1px solid #ffffff1c;background:#ffffff0a;font-weight:750;transition:transform .18s,background .18s,border .18s}.social-btn:hover{transform:translateY(-2px);background:#ffffff14;border-color:#ffffff38}.social-btn.primary{color:#21142c;border:0;background:linear-gradient(110deg,#e9b5ff,#bd8dff)}.social-btn svg{width:18px;height:18px;fill:currentColor}
+    .section{margin-top:36px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:0 3px 14px}.section-kicker{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:#cfa5ff;font-weight:850}.section-head h2{font-size:23px;letter-spacing:-.8px;margin:2px 0 0}.section-head p{margin:0;color:var(--muted);font-size:12px}
+    .video-card{overflow:hidden;border:1px solid #ffffff1a;border-radius:23px;background:linear-gradient(140deg,#201b2a,#15131a);box-shadow:var(--shadow)}.video-frame{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#302340,#14121a);overflow:hidden}.video-thumb{width:100%;height:100%;object-fit:cover;display:block}.video-thumbnail-link{position:absolute;inset:0;display:block;cursor:pointer}.video-placeholder[hidden]{display:none}.video-placeholder{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:18px;color:#e4d7ee;background:radial-gradient(ellipse at center,#6b438a55,transparent 65%),#17121f}.video-placeholder strong{font-size:17px}.video-placeholder span{font-size:12px;color:#bdb0c8;margin-top:5px}.play-button{position:absolute;inset:0;margin:auto;width:72px;height:72px;border:1px solid #ffffffa0;border-radius:50%;display:grid;place-items:center;background:#160f20bb;backdrop-filter:blur(8px);box-shadow:0 8px 32px #0008;transition:transform .18s,background .18s}.play-button:hover{transform:scale(1.08);background:#8c47d9e8}.play-button svg{width:25px;height:25px;fill:white;margin-left:4px}.video-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:17px 19px}.video-title{font-weight:800;font-size:16px}.video-subtitle{color:var(--muted);font-size:12px;margin-top:2px}.watch-link{white-space:nowrap;color:#e2c8ff;font-size:12px;font-weight:800}.watch-link:hover{color:white}.video-embed{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .links-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.link-card{min-height:78px;display:flex;align-items:center;gap:13px;padding:15px 16px;border-radius:18px;border:1px solid var(--line);background:linear-gradient(120deg,#ffffff0b,#ffffff04);transition:transform .18s,border .18s,background .18s}.link-card:not(.disabled):hover{transform:translateY(-2px);border-color:#bd8dff77;background:#ffffff0d}.link-icon{width:43px;height:43px;flex:none;border-radius:14px;display:grid;place-items:center;background:#a45cff22;color:#ddbaff;font-size:21px;font-weight:850}.link-icon svg{width:21px;height:21px;fill:currentColor}.link-icon img{width:100%;height:100%;object-fit:contain;border-radius:10px}.link-copy{min-width:0;flex:1}.link-title{font-weight:800}.link-desc{color:var(--muted);font-size:12px;margin-top:2px}.link-arrow{color:#8e8399;font-size:20px}.disabled{opacity:.66;cursor:default}.tag{display:inline-flex;align-items:center;min-height:20px;margin-left:7px;padding:1px 7px;border-radius:7px;background:#36d87925;color:#62ee99;font-size:10px;font-weight:850;vertical-align:2px}
+    .apps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.app-card{position:relative;min-height:166px;padding:17px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(150deg,#201b2a,#141219);display:flex;flex-direction:column;transition:transform .18s,border .18s}.app-card:hover{transform:translateY(-2px);border-color:#bd8dff77}.app-icon{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;margin-bottom:13px;background:linear-gradient(140deg,#c99aff,#8154df);color:#1d1429;font-size:20px;font-weight:950}.app-name{font-weight:850;line-height:1.2}.app-desc{color:var(--muted);font-size:12px;margin-top:6px;flex:1}.app-open{margin-top:13px;color:#d7b4ff;font-size:12px;font-weight:850}.app-card.disabled .app-open{color:#928a9a}
+    footer{border-top:1px solid var(--line);margin-top:44px;padding-top:18px;text-align:center;color:#8f8798;font-size:12px}footer b{color:#c6b3d8}
+
+    /* GozaVibez brand refinements */
+    body{background:radial-gradient(ellipse at 83% 8%,#bd1b383d,transparent 31%),radial-gradient(ellipse at 79% 42%,#8b15352b,transparent 35%),radial-gradient(ellipse at 12% -8%,#602d8d66,transparent 42%),radial-gradient(ellipse at 90% 30%,#60234a30,transparent 35%),var(--bg)}
+    .page{padding-top:25px}
+    .topbar{position:fixed;top:9px;left:10px;right:10px;z-index:50;width:auto;max-width:none;margin:0;padding:0 14px;border:1px solid #ffffff1c;border-radius:20px;background:#0d0b13e8;backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);box-shadow:0 10px 34px #0005;opacity:0;transform:translateY(-135%);pointer-events:none;transition:transform .38s cubic-bezier(.2,.8,.2,1),opacity .28s}.wordmark{width:min(100%,900px);margin:0 auto;padding:10px 4px;min-height:58px}
+    .topbar.is-visible{transform:translateY(0);opacity:1;pointer-events:auto}
+    .wordmark{gap:8px;font-size:16px}.wordmark img{width:35px;height:35px;object-fit:contain;filter:drop-shadow(0 3px 9px #9d38ff66)}
+    .avatar{width:112px;height:112px;object-fit:contain;padding:4px;background:transparent;box-shadow:none;transform:none;filter:drop-shadow(0 9px 22px #8f36ff55)}
+    .hero p,.section-head p,.video-subtitle{color:#fff}.eyebrow{color:#fff}.red-text,.section-kicker.red-text{color:#ff334a}.section-head h2{color:#fff}.section-head{width:100%}.video-title{color:#fff}.video-subtitle{font-size:13px}.watch-link{color:#fff}.watch-link:hover{color:#ff334a}
+    .socials{width:max-content;max-width:100%;margin:24px auto 0;padding:8px 12px;display:flex;justify-content:center;align-items:center;gap:10px;border:1px solid #ffffff22;border-radius:20px;background:#ffffff08;backdrop-filter:blur(12px)}.social-btn{width:46px;height:46px;min-height:46px;padding:0;border:1px solid transparent;border-radius:15px;background:transparent;color:#fff}.social-btn svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.social-btn:hover{background:#ffffff16;border-color:#ffffff1f}.social-btn:focus-visible{outline:2px solid #ff334a;outline-offset:2px}
+    .app-icon-image{object-fit:cover;padding:0;background:#15121a}.app-card .app-name,.link-title{color:#fff}.fire-intro{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;overflow:hidden;background:#0d0b13;pointer-events:auto;opacity:1}.fire-intro.play{animation:introBurst 1.78s cubic-bezier(.2,.7,.12,1) forwards}.fire-vortex{position:relative;width:min(62vmin,430px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;animation:vortexSpin 1.55s cubic-bezier(.2,.7,.15,1) forwards}.fire-vortex img{width:54%;height:54%;object-fit:contain;animation:logoIgnite 1.75s cubic-bezier(.5,0,.25,1) forwards}
+    .reveal{opacity:0;transform:translateY(18px) scale(.985);filter:blur(3px);transition:opacity .65s ease var(--reveal-delay,0ms),transform .72s cubic-bezier(.2,.82,.22,1.08) var(--reveal-delay,0ms),filter .65s ease var(--reveal-delay,0ms)}.reveal.is-visible{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}.link-card,.app-card,.social-btn,.video-card{transition:transform .32s cubic-bezier(.2,.8,.2,1),border-color .25s,background .25s,box-shadow .3s}.link-card:not(.disabled):active,.app-card:not(.disabled):active,.social-btn:active{transform:scale(.97)}.video-card:hover{box-shadow:0 24px 70px #0009,0 0 34px #a52bff13}
+    @keyframes vortexSpin{0%{transform:scale(.18)}55%{transform:scale(1.08)}100%{transform:scale(1.16)}}@keyframes logoIgnite{0%{transform:scale(.35) rotate(0deg);opacity:0}18%{opacity:1}42%{transform:scale(1.03) rotate(360deg)}68%{transform:scale(1.08) rotate(1080deg)}88%{transform:scale(1.02) rotate(1370deg)}100%{transform:scale(1) rotate(1440deg);opacity:1}}@keyframes introBurst{0%,68%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.5);visibility:hidden}}
+    @media(max-width:650px){.page{padding-top:82px}.topbar{left:7px;right:7px;padding:0 10px}.wordmark{min-height:52px;padding:8px 2px}.wordmark img{width:32px;height:32px}.avatar{width:102px;height:102px}.socials{gap:6px;padding:6px 9px}.social-btn{width:43px;height:43px;min-height:43px}.section-head{align-items:center}.fire-vortex{width:min(78vmin,390px)}}
+    @media(prefers-reduced-motion:reduce){.fire-intro{display:none!important}.reveal{opacity:1;transform:none;filter:none;transition:none}.topbar,.social-btn,.link-card,.app-card,.video-card{transition:none!important}}
+
+    @media(max-width:650px){.page{width:min(100% - 28px,540px);padding-top:19px}.topbar{margin-bottom:36px}.hero h1{letter-spacing:-2.5px}.section{margin-top:30px}.links-grid{grid-template-columns:1fr}.apps-grid{grid-template-columns:1fr}.app-card{min-height:112px;display:grid;grid-template-columns:43px 1fr auto;grid-template-rows:auto auto;column-gap:12px;align-items:center;padding:14px}.app-icon{grid-row:1/3;margin:0}.app-name{align-self:end}.app-desc{align-self:start;margin-top:3px}.app-open{grid-column:3;grid-row:1/3;margin:0;max-width:80px;text-align:right}.video-bottom{align-items:flex-start}.watch-link{padding-top:3px}.availability span{display:none}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="fire-intro" id="fireIntro" aria-hidden="true"><div class="fire-vortex"><img src="./goza-logo.png" alt=""></div></div>
+  <main class="page">
+    <header class="topbar"><a class="wordmark" href="#top" aria-label="GozaLinkz home"><img src="./goza-logo.png" alt=""><span>GozaLinkz</span></a></header>
+    <section class="hero" id="top"><img class="avatar" src="./goza-logo.png" alt="GozaVibez purple and red flame logo"><div class="eyebrow">Creator · Editor · Developer</div><h1>GozaLinkz</h1><p>Hope you’re doing good today! Thanks for stopping by my support page.</p><nav class="socials" id="socialLinks" aria-label="Social links"></nav></section>
+    <section class="section" aria-labelledby="videoHeading"><div class="section-head"><h2 id="videoHeading">Watch My <span class="red-text">Newest Video</span></h2></div><article class="video-card"><div class="video-frame" id="videoFrame"><div class="video-placeholder" id="videoPlaceholder"><strong>Add your latest YouTube video</strong><span>Paste its link into the setup section in index.html</span></div></div><div class="video-bottom"><div><div class="video-title">Newest from <span class="red-text">GozaPlayz</span></div></div></div></article></section>
+    <section class="section" aria-labelledby="linksHeading"><div class="section-head"><div><div class="section-kicker red-text">Support</div><h2 id="linksHeading">My Links</h2></div></div><div class="links-grid" id="quickLinks"></div></section>
+    <section class="section" aria-labelledby="appsHeading"><div class="section-head"><div><div class="section-kicker red-text">Made For You</div><h2 id="appsHeading">Free Apps</h2></div><p>Free to try and use</p></div><div class="apps-grid" id="appsGrid"></div></section>
+    <footer>Made by <b>GozaVibez</b> · Keep creating, keep sharing.</footer>
+  </main>
+  <script>
+    // EDIT HERE: update links, video, labels, and free app destinations.
+    // Leave a URL empty until the public page for that destination is ready.
+    const CONFIG = {
+      video: { url: "https://www.youtube.com/watch?v=jkQXvmo-l6E", title: "Newest from GozaPlayz" },
+      youtubeChannelId: "",
+      socials: [
+        { name: "Instagram", label: "@GozaVibez", url: "https://www.instagram.com/gozavibez/", icon: "instagram" },
+        { name: "Twitch", label: "Watch live", url: "", icon: "twitch" }
+      ],
+      links: [
+        { name: "Buy me a coffee", label: "", url: "https://ko-fi.com/brazylabz", icon: "link", iconSrc: "./coffee-icon.png" },
+        { name: "Merch Store", label: "", url: "https://my-store-10f0a7a.creator-spring.com/", icon: "link", iconSrc: "./merch-icon.png" },
+        { name: "Recibin", label: "Scan receipts and track purchases", url: "https://brazylabz.github.io/Rcibin/", icon: "link", iconSrc: "./recibin-icon.png" }
+      ],
+      apps: [
+        { name: "BrainDumpz", description: "Catch thoughts, sort ideas, and clear your head.", icon: "BD", iconSrc: "./braindumpz-icon.png", url: "https://brazylabz.github.io/BrainDumz/" },
+        { name: "TuneLoopz", description: "Build playlists and keep your music in a loop.", icon: "♫", iconSrc: "./tuneloopz-icon.png", url: "https://brazylabz.github.io/TuneLoopz/" },
+        { name: "Recibin", description: "Scan receipts and keep a simple spending record.", icon: "▤", iconSrc: "./recibin-icon.png", url: "" }
+      ]
+    };
+    const $ = s => document.querySelector(s);
+    const safeURL = value => { try { const u=new URL(value); return u.protocol==='https:'||u.protocol==='http:'?u.href:'' } catch { return '' } };
+    // Supported icon names for CONFIG.socials and CONFIG.links: instagram, twitch, youtube, x, tiktok, discord, link.
+    const iconSVG = name => ({
+      instagram:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.8" r="1"/></svg>',
+      twitch:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3 3.5 6.5V21h5v2.5l3-2.5h4l5-5V3H5Zm13 11-3 3h-4l-2.5 2v-2H6.5V5H18v9Z"/><path d="M10 8h2v5h-2zm5 0h2v5h-2z"/></svg>',
+      youtube:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19.1 4.6 12 4.6 12 4.6s-7.1 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.8.5 8.9.5 8.9.5s7.1 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15.5v-7l6.1 3.5-6.1 3.5Z"/></svg>',
+      x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.7 5.6 22H2.4l7.3-8.4L1.9 2h6.5l4.5 6.7L18.9 2Zm-1.1 18h1.7L7.4 3.9H5.6L17.8 20Z"/></svg>',
+      tiktok:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.2a5.5 5.5 0 0 1-3.4-4.7V1h-4.1v14.2a2.8 2.8 0 1 1-2.8-2.8c.5 0 1 .1 1.4.4V8.6a7 7 0 1 0 5.5 6.8V8.2a9.4 9.4 0 0 0 5.1 1.5V5.6c-.6 0-1.2-.1-1.7-.4Z"/></svg>',
+      discord:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.7 5.3A18 18 0 0 0 15.2 4l-.6 1.2a16 16 0 0 0-5.2 0L8.8 4a18 18 0 0 0-4.5 1.3C1.5 9.4.7 13.4 1.1 17.4a18 18 0 0 0 5.5 2.8l1.2-2a12 12 0 0 1-1.9-.9l.5-.4a13 13 0 0 0 11.2 0l.5.4a12 12 0 0 1-1.9.9l1.2 2a18 18 0 0 0 5.5-2.8c.5-4.6-.8-8.6-3.2-12.1ZM8.7 14.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>',
+      link:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l3-3A5 5 0 0 0 13 2.9l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3A5 5 0 0 0 11 21.1l1.7-1.7"/></svg>'
+    })[name]||'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l3-3A5 5 0 0 0 13 2.9l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3A5 5 0 0 0 11 21.1l1.7-1.7"/></svg>';
+    function renderSocials(){const all=CONFIG.socials.slice(0,6);$('#socialLinks').innerHTML=all.map(x=>{const url=safeURL(x.url);if(!url)return '';return `<a class="social-btn" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${x.name||x.label||'Social link'}" title="${x.name||x.label||'Social link'}">${iconSVG(x.icon||'link')}</a>`}).join('')}
+    function renderQuickLinks(){const all=CONFIG.links.slice(0,5);$('#quickLinks').innerHTML=all.map(x=>{const url=safeURL(x.url);return `<a class="link-card ${url?'':'disabled'}" ${url?`href="${url}" target="_blank" rel="noopener noreferrer"`:'aria-disabled="true"'}><span class="link-icon">${x.iconSrc?`<img src="${x.iconSrc}" alt="" loading="lazy">`:iconSVG(x.icon||'link')}</span><span class="link-copy"><span class="link-title">${x.name||'Link'}</span>${x.label&&`<span class="link-desc">${x.label}</span>`}</span><span class="link-arrow">${url?'↗':'+'}</span></a>`}).join('')||'<div class="link-card disabled"><span class="link-copy"><span class="link-title">Add up to five buttons in the setup section</span><span class="link-desc">Social links and extra buttons are easy to edit in the code.</span></span></div>'}
+    function renderApps(){const root=$('#appsGrid');root.innerHTML=CONFIG.apps.map(x=>{const url=safeURL(x.url);return `<a class="app-card ${url?'':'disabled'}" ${url?`href="${url}" target="_blank" rel="noopener noreferrer"`:'aria-disabled="true"'}>${x.iconSrc?`<img class="app-icon app-icon-image" src="${x.iconSrc}" alt="">`:`<span class="app-icon">${x.icon||'✦'}</span>`}<span class="app-name">${x.name}<span class="tag">BETA</span></span><span class="app-desc">${x.description||''}</span><span class="app-open">${url?'Open app ↗':'Add link in code'}</span></a>`}).join('')}
+    function youtubeId(value){try{const u=new URL(value);if(u.hostname==='youtu.be')return u.pathname.split('/').filter(Boolean)[0]||'';if(u.searchParams.get('v'))return u.searchParams.get('v');const m=u.pathname.match(/\/(?:embed|shorts|live)\/([^/?]+)/);return m?m[1]:''}catch{return /^[\w-]{11}$/.test(value)?value:''}}
+    function renderVideo(videoId=youtubeId(CONFIG.video.url)){
+      const id=videoId,frame=$('#videoFrame');if(!id)return;
+      $('#videoPlaceholder').hidden=true;frame.replaceChildren();
+      const link=document.createElement('a');link.className='video-thumbnail-link';link.href=`https://www.youtube.com/watch?v=${encodeURIComponent(id)}`;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Watch newest video on YouTube');
+      const img=document.createElement('img');img.className='video-thumb';img.alt=`Watch ${CONFIG.video.title||'newest video'} on YouTube`;img.src=`https://img.youtube.com/vi/${encodeURIComponent(id)}/hqdefault.jpg`;img.loading='lazy';
+      link.append(img);frame.append(link);
+    }    renderSocials();renderQuickLinks();renderApps();renderVideo();
+    // RSS lookup refreshes the featured clip when the static page opens; the saved video remains a fallback.
+    async function refreshNewestVideo(){if(!CONFIG.youtubeChannelId)return;try{const rss=`https://www.youtube.com/feeds/videos.xml?channel_id=${encodeURIComponent(CONFIG.youtubeChannelId)}`;const endpoint=`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rss)}`;const response=await fetch(endpoint,{signal:AbortSignal.timeout(4500),cache:'no-store'});if(!response.ok)return;const data=await response.json();const item=data.items?.[0];const id=youtubeId(item?.link||'');if(id){CONFIG.video.url=item.link;CONFIG.video.title=item.title||CONFIG.video.title;renderVideo(id)}}catch{/* Keep the saved latest-video fallback if the feed is unavailable. */}}
+    refreshNewestVideo();
+    const topbar=$('.topbar');const updateTopbar=()=>topbar.classList.toggle('is-visible',window.scrollY>240);updateTopbar();window.addEventListener('scroll',updateTopbar,{passive:true});
+    const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.hero,.section,.video-card,.link-card,.app-card').forEach((el,i)=>{el.classList.add('reveal');el.style.setProperty('--reveal-delay',`${Math.min(i%5,4)*65}ms`);revealObserver.observe(el)});
+    const fireIntro=$('#fireIntro');if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){fireIntro.remove()}else{requestAnimationFrame(()=>fireIntro.classList.add('play'));setTimeout(()=>fireIntro.remove(),1900)}
+    if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
