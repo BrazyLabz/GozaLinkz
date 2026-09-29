@@ -18,6 +18,6 @@ The page has a simple spinning-logo intro, smooth reveal animations, and a round
 
 ## Publish it so anyone can access it
 
-Upload the contents of this folder to a static web host that provides HTTPS, such as GitHub Pages. Include `index.html`, `manifest.webmanifest`, `sw.js`, `goza-logo.png`, `coffee-icon.png`, `merch-icon.png`, `braindumpz-icon.png`, `tuneloopz-icon.png`, and `recibin-icon.png`. Enable Pages in the repository settings and use the resulting HTTPS URL as your public GozaLinkz link.
+Upload the contents of this folder to a static web host that provides HTTPS, such as GitHub Pages. Include `index.html`, `manifest.webmanifest`, `sw.js`, `goza-logo.png`, `apple-touch-icon.png`, `app-icon-192.png`, `app-icon-512.png`, `coffee-icon.png`, `merch-icon.png`, `braindumpz-icon.png`, `tuneloopz-icon.png`, and `recibin-icon.png`. Enable Pages in the repository settings and use the resulting HTTPS URL as your public GozaLinkz link.
 
 
